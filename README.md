@@ -27,5 +27,10 @@ docker kill
 docker rm tomcat-container
 docker rmi <imageID>
 
+docker volume create simple-docker-volume
+docker volume inspect simple-docker-volume
+docker run -dp 12345:8080 --name tomcat-container -v simple-docker-volume:/usr/local/tomcat/logs simple-docker-image
+
+
 
 
