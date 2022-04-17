@@ -1,4 +1,4 @@
-# simple-docker-image
+# Docker
 
 
 Docker tutorial https://docs.docker.com/get-started/02_our_app/
@@ -37,9 +37,31 @@ docker save
 docker load
 https://confluence.frequentis.frq/display/XVP/Docker+Hints
 
+# RabbitMQ
+
 
 RabbitMQ
 https://hub.docker.com/_/rabbitmq
 
-docker run -d --hostname my-rabbit --name some-rabbit --network host rabbitmq:3-management
+docker run -d --hostname my-rabbit --name some-rabbit --network host rabbitmq:3-management ( pulls and runs)
+
+
+# Elastic
+
+https://github.com/docker-library/elasticsearch/blob/9811da3cb96247c527134576365b04d2d993a8e4/8/Dockerfile
+docker pull elasticsearch:8.1.2
+
+## File beat
+Scans logs and sends data to logstash or elastic
+https://www.elastic.co/guide/en/beats/filebeat/8.1/filebeat-installation-configuration.html
+https://www.elastic.co/guide/en/beats/filebeat/8.1/configuration-filebeat-options.html
+
+
+
+
+
+
+
+
+
 
